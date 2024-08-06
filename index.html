@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A portfolio site of Raymond Nuñez">
+    <meta name="author" content="Raymond Nuñez">
+    <title>Raymond V. Nuñez | Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="shortcut icon" href="assets/images/icon.png" type="image/x-icon">
+</head>
+<body>
+    <!-- Navbar Section -->
+    <nav class="navbar navbar-expand-lg sticky-top shadow" id="menu_bar">
+        <div class="container">
+            <a href="." class="navbar-brand text-warning fs-1 fw-bold">RVN</a>
+            <a class="navbar-toggler bg-warning" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas_menu" aria-controls="offcanvas_menu" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </a>
+            <div class="offcanvas offcanvas-start text-bg-dark d-lg-none" id="offcanvas_menu">
+                <div class="offcanvas-header text-center">
+                    <h3 class="fw-bold">RVN</h3>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav flex-fill justify-content-center text-center menu">
+                        <li class="nav-item my-2"><a class="nav-link" href="#about-section">About Me</a></li>
+                        <li class="nav-item my-2"><a class="nav-link" href="#services-section">Services</a></li>
+                        <li class="nav-item my-2"><a class="nav-link" href="#experience-section">Experience</a></li>
+                        <li class="nav-item my-2"><a class="nav-link" href="#projects-section">Projects</a></li>
+                        <li class="nav-item my-2"><a class="nav-link" href="#testimonials-section">Testimonials</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="collapse navbar-collapse d-lg-flex menu" id="menu">
+                <ul class="navbar-nav nav-pills flex-fill justify-content-center">
+                    <li class="nav-item mx-2"><a class="nav-link px-3" href="#about-section">About Me</a></li>
+                    <li class="nav-item mx-2"><a class="nav-link px-3" href="#services-section">Services</a></li>
+                    <li class="nav-item mx-2"><a class="nav-link px-3" href="#experience-section">Experience</a></li>
+                    <li class="nav-item mx-2"><a class="nav-link px-3" href="#projects-section">Projects</a></li>
+                    <li class="nav-item mx-2"><a class="nav-link px-3" href="#testimonials-section">Testimonials</a></li>
+                </ul>
+                <button class="btn btn-warning px-5 py-2 fw-bold rounded-pill" data-bs-toggle="modal" data-bs-target="#contactModal">CONTACT</button>
+            </div>
+        </div>
+    </nav>
+
+    <div data-bs-spy="scroll" data-bs-target="#menu_bar">
+        <!-- Hero/Feature Section -->
+        <header id="feature-section" class="section-bg-img">
+            <div class="bg text-center">
+                <div class="container">
+                    <div class="section-subtitle fw-bold">HELLO, WORLD.</div>
+                    <h1 class="display-4 fw-bold my-5">
+                        <span>I am</span>
+                        <div class="animated-info">
+                            <span class="job-title">Raymond V. Nuñez</span>
+                            <span class="job-title">a Web Designer</span>
+                            <span class="job-title">a Web Developer</span>
+                            <span class="job-title">a Mobile Developer</span>
+                            <span class="job-title">a Wordpress Developer</span>
+                        </div>
+                    </h1>
+                    <a href="#about-section" class="btn btn-outline-warning btn-lg rounded-pill px-5 py-3 fw-bold">MORE ABOUT ME</a>
+                </div>
+            </div>
+        </header>
+
+        <!-- About Section -->
+        <section id="about-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 order-lg-1 text-center align-self-center">
+                        <img src="assets/images/profile.webp" alt="Profile Picture" class="rounded-circle profile img-fluid">
+                    </div>
+                    <div class="col-lg-6 text-center text-lg-start">
+                        <div class="section-subtitle mt-5">About</div>
+                        <h2 class="display-6 fw-bold mb-5">Let me introduce myself.</h2>
+                        <p class="lead my-5 lh-lg">I am a skilled web developer and designer with a passion for creating exceptional digital experiences. With expertise in web design, web development, and mobile development, he combines technical knowledge with a keen eye for aesthetics to deliver visually stunning and user-friendly websites and applications.</p>
+                        <button class="btn btn-dark btn-lg rounded-pill px-5 py-3 fw-bold text-warning">DOWNLOAD CV</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services-section" class="section-bg-img">
+            <div class="bg">
+                <div class="container text-center">
+                    <div id="services-desc">
+                        <div class="section-subtitle">Services</div>
+                        <h2 class="display-6 mb-5 fw-bold text-warning">Services Offered</h2>
+                        <p class="lead my-5">I have a strong proficiency in HTML5, CSS3, Java, PHP, and Flutter. With my expertise in web design, web development, mobile development, and WordPress development, I can bring your ideas to life.</p>
+                    </div>
+                    <div id="services-container" class="row">
+                        <div class="service col-md-6 mt-5">
+                            <img src="assets/images/web-design.png"  alt="Web Design Image" class="img-fluid">
+                            <h3 class="my-3 text-warning fw-bold">Web Design</h3>
+                            <p>Creating visually stunning and user-friendly websites that leave a lasting impression.</p>
+                        </div>
+                        <div class="service col-md-6 mt-5">
+                            <img src="assets/images/web-development.png" alt="Web Development Image" class="img-fluid">
+                            <h3 class="my-3 text-warning fw-bold">Web Development</h3>
+                            <p>Building robust and scalable web applications to meet your business needs.</p>
+                        </div>
+                        <div class="service col-md-6 mt-5">
+                            <img src="assets/images/mobile-application.png" alt="Mobile Development Image" class="img-fluid">
+                            <h3 class="my-3 text-warning fw-bold">Mobile Development</h3>
+                            <p>Crafting innovative and intuitive mobile apps for iOS and Android platforms.</p>
+                        </div>
+                        <div class="service col-md-6 mt-5">
+                            <img src="assets/images/wordpress.png" alt="Mobile Development Image" class="img-fluid">
+                            <h3 class="my-3 text-warning fw-bold">WordPress Development</h3>
+                            <p>Customizing and optimizing WordPress websites for seamless functionality.</p>
+                        </div>
+                    </div>
+                    <button class="btn btn-outline-warning btn-lg rounded-pill px-5 py-3 fw-bold mt-5" data-bs-toggle="modal" data-bs-target="#contactModal">HIRE ME</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Work Experience Section -->
+        <section id="experience-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 text-center text-lg-start mb-5" id="experience-desc">
+                        <div class="section-subtitle">Work Experiences</div>
+                        <h2 class="display-6 fw-bold mb-5">My Work and Experience</h2>
+                        <p class="lead my-5">Explore my journey as a Web Designer, Web Developer, Mobile Developer, and Wordpress Developer.</p>
+                        <a href="#projects-section" class="btn btn-dark btn-lg rounded-pill px-5 py-3 fw-bold text-warning">VIEW PROJECTS</a>
+                    </div>
+                    <div class="col-lg-6" id="work-timeline">
+                        <ul>
+                            <li>
+                                <h3 class="fw-bold mb-4">2020 - Present</h3>
+                                <h4 class="fw-bold mb-4">Web Designer Intern</h4>
+                                <p>Assisted in designing and developing user-friendly websites for clients.</p>
+                            </li>
+                            <li>
+                                <h3 class="fw-bold mb-4">2018 - 2020</h3>
+                                <h4 class="fw-bold mb-4">Junior Web Developer</h4>
+                                <p>Collaborated with a team to create and maintain responsive websites.</p>
+                            </li>
+                            <li>
+                                <h3 class="fw-bold mb-4">2016 - 2018</h3>
+                                <h4 class="fw-bold mb-4">Mobile Developer</h4>
+                                <p>Developed mobile applications for iOS and Android platforms.</p>
+                            </li>
+                            <li>
+                                <h3 class="fw-bold mb-4">2014 - 2016</h3>
+                                <h4 class="fw-bold mb-4">Wordpress Developer</h4>
+                                <p>Created custom Wordpress themes and plugins for various clients.</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects-section" class="section-bg-img">
+            <div class="bg">
+                <div class="container">
+                    <div id="projects-desc" class="text-center">
+                        <div class="section-subtitle">Projects</div>
+                        <h2 class="display-6 mb-5 fw-bold text-warning">Showcasing Notable Projects</h2>
+                        <p class="lead my-5">Explore my portfolio of web and mobile projects.</p>
+                    </div>
+                    <div id="projects-container" class="row gy-4">
+                        <div class="col-12 col-md-6 project">
+                            <div class="card shadow text-body-secondary border-0">
+                                <img src="assets/images/project-1.webp" alt="Project 1 Image" class="project-img card-img-top">
+                                <div class="project-body card-body">
+                                    <h3 class="card-title fw-bold">Revamp of XYZ Corporation's Website</h3>
+                                    <p class="card-text">Web Design Showcase</p>
+                                    <div class="tags">
+                                        <a href="#!" class="btn btn-secondary btn-sm">Web Design</a>
+                                        <a href="#!" class="btn btn-secondary btn-sm">Responsive</a>
+                                        <a href="#!" class="btn btn-secondary btn-sm">UI/UX</a>
+                                    </div>
+                                    <div class="text-center mt-5 mb-3">
+                                        <button class="btn btn-dark rounded-pill px-5 py-3 fw-bold text-warning" data-bs-toggle="modal" data-bs-target="#projectOne">VIEW PROJECT</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 project">
+                            <div class="card shadow text-body-secondary border-0">
+                                <img src="assets/images/project-3.webp" alt="Project 3 Image" class="project-img card-img-top">
+                                <div class="project-body card-body">
+                                    <h3 class="card-title fw-bold">Development of the XYZ Fitness Mobile Application</h3>
+                                    <p class="card-text">Mobile Development Showcase</p>
+                                    <div class="tags">
+                                        <a href="#!" class="btn btn-secondary btn-sm">Mobile Development</a>
+                                        <a href="#!" class="btn btn-secondary btn-sm">IOS</a>
+                                        <a href="#!" class="btn btn-secondary btn-sm">Android</a>
+                                    </div>
+                                    <div class="text-center mt-5 mb-3">
+                                        <button class="btn btn-dark rounded-pill px-5 py-3 fw-bold text-warning" data-bs-toggle="modal" data-bs-target="#projectThree">VIEW PROJECT</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 project">
+                            <div class="card shadow text-body-secondary border-0">
+                                <img src="assets/images/project-2.webp" alt="Project 2 Image" class="project-img card-img-top">
+                                <div class="project-body card-body">
+                                    <h3 class="card-title fw-bold">Development of the ABC eCommerce Platform</h3>
+                                    <p class="card-text">Web Development Showcase</p>
+                                    <div class="tags">
+                                        <a href="#!" class="btn btn-secondary btn-sm">Web Development</a>
+                                        <a href="#!" class="btn btn-secondary btn-sm">Backend</a>
+                                        <a href="#!" class="btn btn-secondary btn-sm">Database</a>
+                                    </div>
+                                    <div class="text-center mt-5 mb-3">
+                                        <button class="btn btn-dark rounded-pill px-5 py-3 fw-bold text-warning" data-bs-toggle="modal" data-bs-target="#projectTwo">VIEW PROJECT</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 project">
+                            <div class="card shadow text-body-secondary border-0">
+                                <img src="assets/images/project-4.webp" alt="Project 4 Image" class="project-img card-img-top">
+                                <div class="project-body card-body">
+                                    <h3 class="card-title fw-bold">Custom WordPress Website Development for GreenLeaf Landscaping</h3>
+                                    <p class="card-text">WordPress Development Showcase</p>
+                                    <div class="tags">
+                                        <a href="#!" class="btn btn-secondary btn-sm">WordPress Development</a>
+                                        <a href="#!" class="btn btn-secondary btn-sm">Custom Themes</a>
+                                        <a href="#!" class="btn btn-secondary btn-sm">Plugins</a>
+                                    </div>
+                                    <div class="text-center mt-5 mb-3">
+                                        <button class="btn btn-dark rounded-pill px-5 py-3 fw-bold text-warning" data-bs-toggle="modal" data-bs-target="#projectFour">VIEW PROJECT</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonial Section -->
+        <section id="testimonials-section" class="carousel carousel-dark slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="testimonial text-center">
+                        <figure>  
+                            <blockquote class="testimonial-testimony blockquote my-5">Raymond's work is exceptional. He delivered a stunning website that exceeded my expectations.</blockquote>
+                            <figcaption class="testimonial-user">
+                                <img src="assets/images/man.png" alt="Avatar" class="img-fluid rounded-circle testimonial-user-avatar">
+                                <div class="testimonial-user-name">John Doe</div>
+                                <div class="testimonial-user-job">CEO, Company XYZ</div>
+                            </figcaption>
+                        </figure>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="testimonial text-center">
+                        <figure>  
+                            <blockquote class="testimonial-testimony blockquote my-5">Raymond's design skills are top-notch. The website he created was beyond my wildest dreams.</blockquote>
+                            <figcaption class="testimonial-user">
+                                <img src="assets/images/woman.png" alt="Avatar" class="img-fluid rounded-circle testimonial-user-avatar">
+                                <div class="testimonial-user-name">Anna Smith</div>
+                                <div class="testimonial-user-job">CEO, Company ABC</div>
+                            </figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#testimonials-section" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#testimonials-section" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact-section" class="section-bg-img">
+            <div class="bg">
+                <div class="container text-center text-lg-start">
+                    <div class="row align-items-center">
+                        <div class="col-lg-9 mb-5 mb-lg-0">
+                            <h2 class="display-6 fw-bold text-warning">Get in touch with me.</h2>
+                            <p>Let's discuss your project and collaborate on something amazing together.</p>
+                        </div>
+                        <div class="col-lg-3 text-lg-end">
+                            <button class="btn btn-outline-warning btn-lg rounded-pill px-5 py-3 fw-bold" data-bs-toggle="modal" data-bs-target="#contactModal">CONTACT</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="container text-center py-5">
+            <div class="d-lg-flex justify-content-between align-items-center">
+                <span class="logo navbar-brand fw-bold fs-2">RVN</span>
+                <nav class="menu nav justify-content-center justify-content-between-lg my-5 my-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="#about-section">About Me</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#services-section">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#experience-section">Experience</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects-section">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#testimonials-section">Testimonials</a></li>
+                </nav>
+                <div id="social-medias">
+                    <a href="#!"><i class="ri-facebook-circle-fill"></i></a>
+                    <a href="#!"><i class="ri-instagram-line"></i></a>
+                    <a href="#!"><i class="ri-twitter-x-line"></i></a>
+                    <a href="#!"><i class="ri-linkedin-box-fill"></i></a>
+                    <a href="#!"><i class="ri-youtube-fill"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div id="copyright" class="text-center py-3">&copy; 2024. All Rights Reserved.</div>
+
+    <!-- Contact Form (Modal)-->
+    <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content text-body-secondary">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5 fw-bold" id="contactModalLabel">Contact</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form class="form needs-validation" novalidate>
+                        <div class="mb-3 form-floating">
+                            <input type="text" name="name_field" id="name_field" class="form-control" required>
+                            <label for="name_field" class="form-label">Full Name</label>
+                            <div class="invalid-feedback">
+                                Please enter your Full Name
+                            </div>
+                        </div>
+                        <div class="mb-3 form-floating">
+                            <input type="email" name="email_field" id="email_field" class="form-control" required>
+                            <label for="email_field" class="form-label">Email</label>
+                            <div class="invalid-feedback">
+                                Please enter your Email Address
+                            </div>
+                        </div>
+                        <div class="mb-3 form-floating">
+                            <input type="text" name="subject_field" id="subject_field" class="form-control" required>
+                            <label for="subject_field" class="form-label">Subject</label>
+                            <div class="invalid-feedback">
+                                Please enter subject.
+                            </div>
+                        </div>
+                        <div class="mb-3 form-floating">
+                            <textarea class="form-control" id="message_field" rows="5" required></textarea>
+                            <label for="message_field" class="form-label">Message</label>
+                            <div class="invalid-feedback">
+                                Please enter message.
+                            </div>
+                        </div>
+                        <div class="mt-5 mb-3 d-grid">
+                            <button class="btn btn-dark text-warning py-3 fw-bold">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="projectOne" aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-center">
+            <div class="modal-content text-body-secondary">
+                <div class="modal-header">
+                    <h4 class="modal-title text-secondary">Project Details</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="assets/images/project-1-full.webp" alt="" class="img-fluid">
+                    <div class="project-details my-5 p-3">
+                        <h1 class="mb-5 fw-bold">Revamp of XYZ Corporation's Website</h1>
+                        <h3 class="mb-3">Project Overview:</h3>
+                        <p class="mb-5">
+                            The XYZ Corporation's website requires a complete redesign to enhance user experience, modernize its appearance, and improve functionality. The current site lacks visual appeal, is not mobile-responsive, and has outdated content that does not reflect the company's current brand identity and offerings. The goal of this project is to create a visually appealing, user-friendly, and functional website that aligns with the company's brand and engages its target audience effectively.
+                        </p>
+                        <h3 class="mb-3">Objectives:</h3>
+                        <ol>
+                            <li>
+                                <h5>Redesign & Optimization:</h5>
+                                <ul>
+                                    <li>Create a fresh and contemporary look that reflects XYZ Corporation's brand identity and values.</li>
+                                    <li>Develop a cohesive color scheme, typography, and imagery that aligns with the company’s visual branding.</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h5>Enhanced User Experience:</h5>
+                                <ul>
+                                    <li>Design a responsive layout that ensures optimal performance across all devices (desktop, tablet, and mobile).</li>
+                                    <li>Implement intuitive navigation to improve user flow and ease of access to key information.</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h5>Functional Improvements:</h5>
+                                <ul>
+                                    <li>Incorporate interactive elements such as contact forms, live chat, and social media integration.</li>
+                                    <li>Ensure that the website loads quickly and performs efficiently.</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h5>Search Engine Optimization (SEO):</h5>
+                                <ul>
+                                    <li>Optimize website structure and content for better search engine visibility.</li>
+                                    <li>Implement best practices for on-page SEO to improve search engine rankings.</li>
+                                </ul>
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="projectTwo" aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-center">
+            <div class="modal-content text-body-secondary">
+                <div class="modal-header">
+                    <h4 class="modal-title text-secondary">Project Details</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="assets/images/project-2-full.webp" alt="" class="img-fluid">
+                    <div class="project-details my-5 p-3">
+                        <h1 class="mb-5 fw-bold">Development of the ABC eCommerce Platform</h1>
+                        <h3 class="my-3">Project Overview:</h3>
+                        <p class="mb-5">
+                            The ABC Company seeks to develop a new eCommerce platform to enhance its online sales capabilities and improve the overall customer experience. The current system is outdated, lacks essential features, and does not integrate well with modern payment gateways and inventory management systems. The goal of this project is to build a robust, scalable, and secure eCommerce website that supports a seamless shopping experience, integrates with existing systems, and is capable of handling high traffic volumes.
+                        </p>
+                        <h3 class="mb-3">Objectives:</h3>
+                        <ol>
+                            <li>
+                                <h5>Platform Development:</h5>
+                                <ul>
+                                    <li>Build a custom eCommerce platform tailored to ABC Company’s specific needs and business model.</li>
+                                    <li>Ensure the platform is scalable to accommodate future growth and expansion.</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h5>User Experience (UX) Enhancement:</h5>
+                                <ul>
+                                    <li>Design a user-friendly interface that simplifies the shopping process and enhances overall customer satisfaction.</li>
+                                    <li>Implement features such as personalized recommendations, advanced search options, and an intuitive checkout process.</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h5>Integration and Functionality:</h5>
+                                <ul>
+                                    <li>Integrate with existing inventory management, CRM, and ERP systems.</li>
+                                    <li>Implement a secure and reliable payment gateway to handle transactions.</li>
+                                    <li>Include features for product management, order tracking, and customer service.</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h5>Performance and Security:</h5>
+                                <ul>
+                                    <li>Ensure high performance with fast page load times and efficient handling of large volumes of traffic.</li>
+                                    <li>Implement robust security measures to protect user data and prevent breaches.</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h5>Analytics and Reporting:</h5>
+                                <ul>
+                                    <li>Integrate analytics tools to track user behavior, sales performance, and other key metrics.</li>
+                                    <li>Provide reporting capabilities for sales, inventory, and customer insights.</li>
+                                </ul>
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="projectThree" aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-center">
+            <div class="modal-content text-body-secondary">
+                <div class="modal-header">
+                    <h4 class="modal-title text-secondary">Project Details</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="assets/images/project-3-full.webp" alt="" class="img-fluid">
+                    <div class="project-details my-5 p-3">
+                        <h1 class="mb-5 fw-bold">Development of the XYZ Fitness Mobile Application</h1>
+                        <h3 class="mb-3">Project Overview:</h3>
+                        <p class="mb-5">
+                            XYZ Fitness is launching a new mobile application to provide users with a comprehensive fitness solution, including workout plans, nutrition guidance, and progress tracking. The existing platform is primarily web-based and lacks a mobile presence. This project aims to create a user-friendly, feature-rich mobile app for both iOS and Android that enhances user engagement, provides personalized fitness experiences, and integrates with wearable devices.
+                        </p>
+                        <h3 class="mb-3">Objectives:</h3>
+                        <ol>
+                            <li>
+                                <h5>Mobile Application Development:</h5>
+                                <ul>
+                                    <li>Develop a native mobile application for iOS and Android platforms that provides a seamless user experience.</li>
+                                    <li>Ensure the app is optimized for performance and compatibility across various devices and screen sizes.</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h5>Enhanced User Experience:</h5>
+                                <ul>
+                                    <li>Design an intuitive user interface (UI) that facilitates easy navigation and interaction.</li>
+                                    <li>Implement features that support personalized workout plans, meal tracking, and goal setting.</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h5>Integration with Wearables:</h5>
+                                <ul>
+                                    <li>Integrate with popular wearable devices (e.g., Fitbit, Apple Watch) to sync fitness data and provide real-time tracking.</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h5>User Engagement and Retention:</h5>
+                                <ul>
+                                    <li>Incorporate social features, such as community challenges, leaderboards, and the ability to share progress on social media.</li>
+                                    <li>Implement push notifications and reminders to keep users engaged and motivated.</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h5>Data Security and Privacy:</h5>
+                                <ul>
+                                    <li>Ensure the app adheres to best practices for data security and user privacy, including secure data storage and GDPR compliance.</li>
+                                </ul>
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="projectFour" aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-center">
+            <div class="modal-content text-body-secondary">
+                <div class="modal-header">
+                    <h4 class="modal-title text-secondary">Project Details</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="assets/images/project-4-full.webp" alt="" class="img-fluid">
+                    <div class="project-details my-5 p-3">
+                        <h1 class="mb-5 fw-bold">Custom WordPress Website Development for GreenLeaf Landscaping</h1>
+                        <h3 class="mb-3">Project Overview:</h3>
+                        <p class="mb-5">
+                            The goal of this project is to design and develop a custom WordPress website for GreenLeaf Landscaping, a company specializing in residential and commercial landscaping services. The new website aims to enhance GreenLeaf Landscaping’s online presence, provide a user-friendly experience for potential clients, and showcase their services, portfolio, and customer testimonials effectively.
+                        </p>
+                        <h3 class="mb-3">Objectives:</h3>
+                        <ol>
+                            <li>
+                                <h5>Website Design and Development:</h5>
+                                <ul>
+                                    <li>Create a modern, professional design that aligns with the client's brand identity.</li>
+                                    <li>Develop a fully responsive website that ensures optimal performance on all devices (desktops, tablets, smartphones).</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h5>Content Management:</h5>
+                                <ul>
+                                    <li>Implement a robust and easy-to-use content management system (CMS) using WordPress.</li>
+                                    <li>Provide training and documentation for the client's team to manage content updates independently.</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h5>SEO Optimization:</h5>
+                                <ul>
+                                    <li>Optimize the website for search engines to improve visibility and ranking.</li>
+                                    <li>Implement best practices for on-page SEO, including meta tags, keywords, and site structure.</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h5>Security and Performance:</h5>
+                                <ul>
+                                    <li>Ensure the website is secure by implementing SSL certificates, regular backups, and security plugins.</li>
+                                    <li>Optimize the website for speed and performance, including caching and image optimization.</li>
+                                </ul>
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function(event) {
+            var elem = document.querySelector('#projects-container');
+            var msnry = new Masonry( elem, {
+                // options
+                itemSelector: '.project',
+            });
+        });
+
+        (() => {
+            'use strict'
+
+            // Fetch all the forms we want to apply custom Bootstrap validation styles to
+            const forms = document.querySelectorAll('.needs-validation')
+
+            // Loop over them and prevent submission
+            Array.from(forms).forEach(form => {
+                form.addEventListener('submit', event => {
+                if (!form.checkValidity()) {
+                    event.preventDefault()
+                    event.stopPropagation()
+                }
+
+                form.classList.add('was-validated')
+                }, false)
+            })
+        })();
+    </script>
+</body>
+</html>
